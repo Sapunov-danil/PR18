@@ -1,0 +1,27 @@
+﻿<Page x:Class="Airlines_Sapunov.Pages.Main"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Airlines_Sapunov.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Main">
+
+    <Grid Background="#1E90FF">
+        <Grid Height="50" VerticalAlignment="Top">
+            <Image HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" Source="/img/plane.png"/>
+            <Label Content="Управление авиалиниями" Foreground="white" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="70,0,0,0" FontWeight="Bold"/>
+            <Button Click="Exit" Content="Выход" HorizontalAlignment="Right" VerticalAlignment="Center" Height="25" Width="100" Margin="0,0,10,0"/>
+        </Grid>
+        <Grid Margin="0,50,0,0">
+            <Label Content="Поиск дешёвых авиабилетов" Foreground="White" FontWeight="Bold" FontSize="24" HorizontalAlignment="Center" Margin="0,60,0,0"/>
+            <Label Content="Лучший способ купить авиабилеты дёшево" Foreground="White" FontSize="14" HorizontalAlignment="Center" Margin="0,120,0,0"/>
+            <Label Content="Откуда: " Foreground="White" FontSize="16" HorizontalAlignment="Center" Margin="0,160,280,0"/>
+            <TextBox x:Name="from" HorizontalAlignment="Center" Height="25" Width="350" Margin="0,10,0,0"/>
+            <Label Content="Куда: " Foreground="White" FontSize="16" HorizontalAlignment="Center" Margin="0,230,290,0"/>
+            <TextBox x:Name="to" HorizontalAlignment="Center" Height="25" Width="350" Margin="0,160,0,0"/>
+            <Button Click="FindTickets" Content="Найти" Foreground="White" Background="#FF4500" HorizontalAlignment="Center" Height="25" Width="100" Margin="250,220,0,0"/>
+        </Grid>
+    </Grid>
+</Page>
