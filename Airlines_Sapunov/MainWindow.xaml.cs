@@ -1,4 +1,5 @@
-﻿using Airlines_Sapunov.Pages;
+﻿using Airlines_Sapunov.Classes;
+using Airlines_Sapunov.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,7 @@ namespace Airlines_Sapunov
     public partial class MainWindow : Window
     {
         public static MainWindow mainWindow;
+        public List<TicketClass> ticketClasses = new List<TicketClass>();
         public MainWindow()
         {
             InitializeComponent();

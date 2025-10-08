@@ -15,14 +15,16 @@ using System.Windows.Shapes;
 
 namespace Airlines_Sapunov.Pages
 {
-    /// <summary>
-    /// Логика взаимодействия для Ticket.xaml
-    /// </summary>
     public partial class Ticket : Page
     {
         public Ticket()
         {
             InitializeComponent();
+        }
+
+        private void Back(object sender, RoutedEventArgs e)
+        {
+            MainWindow.mainWindow.OpenPages(MainWindow.pages.main);
         }
     }
 }

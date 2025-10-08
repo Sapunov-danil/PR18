@@ -3,12 +3,25 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Airlines_Sapunov.Pages"
+      xmlns:local="clr-namespace:Airlines_Sapunov.Elements"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Ticket">
 
-    <Grid>
-        
+    <Grid Background="White">
+        <Grid Background="#1E90FF" Height="50" VerticalAlignment="Top">
+            <Image HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" Source="/img/plane.png"/>
+            <Label Content="Управление авиалиниями" Foreground="white" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="70,0,0,0" FontWeight="Bold"/>
+            <Button Click="Back" Content="Вернуться" HorizontalAlignment="Right" VerticalAlignment="Center" Height="25" Width="100" Margin="0,0,10,0"/>
+        </Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="10,60,10,10">
+            <ItemsControl x:Name="TicketsItemsControl">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <local:TicketItem/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
     </Grid>
 </Page>
