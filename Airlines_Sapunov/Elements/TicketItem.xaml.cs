@@ -13,23 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Airlines_Sapunov.Pages
+namespace Airlines_Sapunov.Elements
 {
-    public partial class Main : Page
+    /// <summary>
+    /// Логика взаимодействия для TicketItem.xaml
+    /// </summary>
+    public partial class TicketItem : UserControl
     {
-        public Main()
+        public TicketItem()
         {
             InitializeComponent();
-        }
-
-        private void Exit(object sender, RoutedEventArgs e)
-        {
-            MainWindow.mainWindow.Close();
-        }
-
-        private void FindTickets(object sender, RoutedEventArgs e)
-        {
-            MainWindow.mainWindow.frame.Navigate("");
         }
     }
 }
