@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Airlines_Sapunov.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,11 @@ namespace Airlines_Sapunov.Pages
         public Ticket()
         {
             InitializeComponent();
+        }
+
+        public void SetTickets(List<TicketClass> tickets)
+        {
+            TicketsItemsControl.ItemsSource = tickets;
         }
 
         private void Back(object sender, RoutedEventArgs e)

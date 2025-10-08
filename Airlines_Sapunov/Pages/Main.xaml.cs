@@ -29,7 +29,16 @@ namespace Airlines_Sapunov.Pages
 
         private void FindTickets(object sender, RoutedEventArgs e)
         {
-            MainWindow.mainWindow.frame.Navigate("");
+            string fromText = from.Text.Trim().ToLower();
+            string toText = to.Text.Trim().ToLower();
+
+            var filteredTickets = MainWindow.mainWindow.ticketClasses
+                .Where(t => t.from.ToLower() == fromText && t.to.ToLower() == toText)
+                .ToList();
+
+            var ticketPage = new Ticket();
+            ticketPage.SetTickets(filteredTickets);
+            MainWindow.mainWindow.frame.Navigate(ticketPage);
         }
     }
 }

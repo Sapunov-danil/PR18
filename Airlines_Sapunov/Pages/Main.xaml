@@ -18,10 +18,10 @@
             <Label Content="Поиск дешёвых авиабилетов" Foreground="White" FontWeight="Bold" FontSize="24" HorizontalAlignment="Center" Margin="0,60,0,0"/>
             <Label Content="Лучший способ купить авиабилеты дёшево" Foreground="White" FontSize="14" HorizontalAlignment="Center" Margin="0,120,0,0"/>
             <Label Content="Откуда: " Foreground="White" FontSize="16" HorizontalAlignment="Center" Margin="0,160,280,0"/>
-            <TextBox x:Name="from" HorizontalAlignment="Center" Height="25" Width="350" Margin="0,10,0,0"/>
+            <TextBox x:Name="from" HorizontalAlignment="Center" Width="350" Margin="0,193,0,0" Height="25" VerticalAlignment="Top"/>
             <Label Content="Куда: " Foreground="White" FontSize="16" HorizontalAlignment="Center" Margin="0,230,290,0"/>
-            <TextBox x:Name="to" HorizontalAlignment="Center" Height="25" Width="350" Margin="0,160,0,0"/>
-            <Button Click="FindTickets" Content="Найти" Foreground="White" Background="#FF4500" HorizontalAlignment="Center" Height="25" Width="100" Margin="250,220,0,0"/>
+            <TextBox x:Name="to" HorizontalAlignment="Center" Height="25" Width="350" Margin="0,268,0,0" VerticalAlignment="Top"/>
+            <Button Click="FindTickets" Content="Найти" Foreground="White" Background="#FF4500" Height="25" Width="200" Margin="0,298,0,0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         </Grid>
     </Grid>
 </Page>

@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace Airlines_Sapunov.Elements
 {
-    /// <summary>
-    /// Логика взаимодействия для TicketItem.xaml
-    /// </summary>
     public partial class TicketItem : UserControl
     {
         public TicketItem()
